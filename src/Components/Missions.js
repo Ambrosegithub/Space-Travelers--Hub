@@ -15,9 +15,9 @@ const Missions = () => {
       if (!missions.length) {
         dispatch(fetchMissions);
       }
-    },[])
-const handleJoinMission = (id) => dispatch(joinMission(id))
-const handleLeaveMission = (id) => dispatch(leaveMission(id))
+    },[]);
+const handleJoinMission = (id) => dispatch(joinMission(id));
+const handleLeaveMission = (id) => dispatch(leaveMission(id));
   return (
     <Container className="container-fluid">
     <Table className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
@@ -42,7 +42,7 @@ const handleLeaveMission = (id) => dispatch(leaveMission(id))
             </td>
             <td className="badge-cont">
                 {reserved && <span className="act-badge">Active Member</span>}
-                {!reserved && <span className="badge">NOT A MEMBER</span>}
+                {!reserved && <span className="badge" style={{ color: "green" }}>NOT A MEMBER</span>}
               </td>
               <td className="button-cont">
                 {reserved && (
