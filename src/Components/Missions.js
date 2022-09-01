@@ -42,7 +42,7 @@ const handleLeaveMission = (id) => dispatch(leaveMission(id));
             </td>
             <td className="badge-cont">
                 {reserved && <span className="act-badge">Active Member</span>}
-                {!reserved && <span className="badge" style={{ color: "green" }}>NOT A MEMBER</span>}
+                {!reserved && <span className="badge" style={{ color: "#f2f2f2" }}>NOT A MEMBER</span>}
               </td>
               <td className="button-cont">
                 {reserved && (

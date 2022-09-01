@@ -1,10 +1,22 @@
+body {
+  width: 100%;
+}
+
 .profile-content {
-  display: flex;
+  display: grid;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  float: right;
+  width: 45%;
 }
 
 .profile-title {
   margin: 10px;
+  float: right;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
 }

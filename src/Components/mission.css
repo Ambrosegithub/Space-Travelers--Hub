@@ -7,6 +7,7 @@
 body {
   background-color: #fff;
   color: #949597;
+  width: 100%;
 }
 
 .wrapper:nth-child(odd) {
@@ -23,6 +24,10 @@ body {
 
 .nav-item {
   background-color: #fff;
+}
+
+.nav-item a {
+  text-decoration: none;
 }
 
 .nav-item a .active {
@@ -61,6 +66,26 @@ button {
   text-align: center;
 }
 
-.status {
-  border: #6d757d 1px solid;
+.d-grid {
+  color: red;
+}
+
+.row {
+  display: grid;
+  float: left;
+  width: 45%;
+  position: relative;
+  left: 0;
+  margin-right: 0.8%;
+}
+
+.row :nth-child(even) {
+  width: 100%;
+  border-right: none;
+  /* stylelint-disable-next-line csstree/validator */
+  padding: auto;
+}
+
+.children {
+  color: red;
 }

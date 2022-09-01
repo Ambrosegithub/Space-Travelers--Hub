@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../Images/logo.png';
+import './mission.css';
 
 const NavBar = () => (
   <div className="shadow">
