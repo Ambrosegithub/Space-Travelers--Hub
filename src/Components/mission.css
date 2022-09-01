@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  color: #949597;
+}
+
+.wrapper:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.act-badge {
+  background-color: #18aeb8;
+  padding: 6px 12px;
+  font-size: 6px;
+  border-radius: 4px;
+  color: #f2f2f2;
+}
+
+.nav-item {
+  background-color: #fff;
+}
+
+.nav-item a .active {
+  text-decoration: underline;
+}
+
+.nav-item:hover {
+  background-color: #ccc;
+}
+
+.badge {
+  background-color: #6d757d;
+  padding: 6px 12px;
+  font-size: 6px;
+  border-radius: 4px;
+  color: #f2f2f2;
+}
+
+.leave-btn {
+  padding: 5px 10px;
+  background-color: #f2f2f2;
+  color: red;
+}
+
+.join-btn {
+  padding: 5px 8px;
+  background-color: #f2f2f2;
+}
+
+button {
+  width: 120px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.status {
+  border: #6d757d 1px solid;
+}

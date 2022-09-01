@@ -2,7 +2,23 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../Images/logo.png';
 
-const NavBar = () => (
+const NavBar = () => {
+  
+let component;
+
+
+switch(window.location.pathname){
+  case "./":
+  component = <Rocket />;
+  break;
+  case "./mission":
+    component = <Missions />
+    break;
+    case "./profile":
+    component = <My Profile />
+    break
+}
+  return (
   <div className="shadow">
     <div className="container">
       <nav className="navbar navbar-expand-lg bg-white ">
@@ -64,5 +80,5 @@ const NavBar = () => (
     </div>
   </div>
 );
-
+}
 export default NavBar;
