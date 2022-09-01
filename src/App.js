@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import NavBar from './Components/NavBar';
-import MyProfile from './Components/MyProfile';
+import MyProfile from './Components/Profile/MyProfile';
 import Missions from './Components/Missions';
 import { fetchRocket } from './redux/Rocket';
 import Rocket from './Components/Rockets/Rocket';
