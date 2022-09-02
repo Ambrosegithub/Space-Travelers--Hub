@@ -1,5 +1,3 @@
-/** eslint-disable */
-
 // define constant
 const uRL = 'https://api.spacexdata.com/v3/missions';
 const LOAD_MISSION = 'missions/load';

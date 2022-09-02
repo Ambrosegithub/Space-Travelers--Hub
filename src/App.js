@@ -7,7 +7,7 @@ import Missions from './Components/Missions';
 import { fetchRocket } from './redux/Rocket';
 import Rocket from './Components/Rockets/Rocket';
 
-function App() {
+const App = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     async function intitData() {
@@ -27,6 +27,6 @@ function App() {
       </BrowserRouter>
     </div>
   );
-}
+};
 
 export default App;
