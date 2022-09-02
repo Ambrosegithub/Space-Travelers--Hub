@@ -3,33 +3,28 @@ import Container from 'react-bootstrap/esm/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { useSelector } from 'react-redux';
-import RocketProfile from './Rockets/Rocket';
 
 const MyProfile = () => {
   const myMissionProfile = useSelector((state) => [
     {
-      MissionTitle: 'Missons',
+      MissionTitle: 'My mission',
       data: state.missions.filter((mission) => mission.reserved),
     },
   ]);
   return (
-    <div>
+    <div className="content-div">
+      <h1>My Missions</h1>
       {myMissionProfile.map(({ id, MissionTitle, data }) => (
-        <Container key={id}>
-          <Row>
-            <Col sm={5}>{MissionTitle}</Col>
-            <Col sm={5}>
+        <Container key={id} className="d-grid">
+          <Row className="missionprofile">
+            <Col sm={6} className="title">{MissionTitle}</Col>
+            <Col sm={6} className="no-mission">
               {!data.length ? (
-                <p>No Missions</p>
+                <p className="para">No Missions</p>
               ) : (
-                data.map((item) => <p key={item.id}>{item.name}</p>)
+                data.map((item) => <p key={item.id} className="para1">{item.name}</p>)
               )}
             </Col>
-          </Row>
-          <Row>
-            <div className="profile-rockets col-5 ">
-              <RocketProfile />
-            </div>
           </Row>
         </Container>
       ))}
