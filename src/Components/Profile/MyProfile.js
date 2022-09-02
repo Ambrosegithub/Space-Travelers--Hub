@@ -16,15 +16,20 @@ const MyProfile = () => {
     <div>
       {myMissionProfile.map(({ id, MissionTitle, data }) => (
         <Container key={id}>
-          <Row>
-            <Col sm={5}>{MissionTitle}</Col>
-            <Col sm={5}>
-              {!data.length ? (
-                <p>No Missions</p>
-              ) : (
-                data.map((item) => <p key={item.id}>{item.name}</p>)
-              )}
+          <Row className=" col-3">
+            <Col className="fw-bold" sm={5}>
+              {MissionTitle}
             </Col>
+            <div className="col-5">
+              <Col sm={5}>
+                {!data.length ? (
+                  <p>No Missions</p>
+                ) : (
+                  // eslint-disable-next-line jsx-a11y/label-has-associated-control
+                  data.map((item) => <label key={item.id}>{item.name}</label>)
+                )}
+              </Col>
+            </div>
           </Row>
           <Row>
             <div className="profile-rockets col-5 ">
