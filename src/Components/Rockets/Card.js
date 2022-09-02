@@ -33,7 +33,7 @@ function Card(props) {
           </div>
           <div className="buttonDiv">
             { reserved ? <button type="button" className="cancelRocket btnRocket" onClick={onReserveRocket}>Cancel Reservation</button>
-              : <button type="button" className="reserveRocket btnRocket" onClick={onReserveRocket}>Reserve Rocket</button> }
+              : <button type="button" className="reserveRocket btnRocket" onClick={onReserveRocket}>ReserveRocket</button> }
 
           </div>
 
